@@ -20,3 +20,11 @@ class Contact(models.Model):
     def __unicode__(self):
         return self.name
 
+class BaseStation(models.Model):
+    class Meta:
+        abstract = True
+
+class Handset(models.Model):
+    names = models.CharField(max_length=255)
+    basestation = models.ForeignKey(BaseStation)
+
