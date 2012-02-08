@@ -11,7 +11,7 @@ def fread(fn):
 setup(
     author = 'George Hickman',
     author_email = 'dev@incuna.com',
-    description = 'Rename tv show files using online databases',
+    description = 'Provide a way to push a list of contacts to phone handsets via their base station.',
     install_requires = ('django-extensible-profiles>=0.6', 'vobject>=0.8.1c',),
     long_description = fread('README.md'),
     name = 'contacts',
